@@ -1,15 +1,16 @@
-import './style.css';
-import './js/ini-gambar.js';
-
-// Set Title
-document.title = "Latihan React";
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/style.css';
+import './js/ini-kartu.js';
+import reactlogo from './img/react-icon.svg';
 
 // Instantiate IniGambar class 
-const logo = document.createElement('ini-gambar');
-logo.setAttribute('src', "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg");
+let logo = document.createElement('ini-kartu');
+logo.setAttribute('src', reactlogo);
 logo.setAttribute('alt', "ini logo react");
-logo.setAttribute('caption', "logo react");
+logo.setAttribute('caption', "React");
 logo.setAttribute('class', "logo");
-
+logo.setAttribute('description', "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.");
+logo.setAttribute('url', "https://reactjs.org");
 document.body.appendChild(logo);
-
