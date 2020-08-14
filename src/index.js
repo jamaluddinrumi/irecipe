@@ -1,39 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import './style.css';
+import './js/ini-gambar.js';
 
-/** Like Button Class */
-'use strict';
-
-const e = React.createElement;
-
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
-
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
-
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
-    );
-  }
-}
-/** End: Like Button Class */
-
-/** Set Title */
+// Set Title
 document.title = "Latihan React";
 
-/** Bootstrap App */
-const rootApp = document.createElement('div');
-rootApp.setAttribute('id', 'rootApp');
+// Instantiate IniGambar class 
+const logo = document.createElement('ini-gambar');
+logo.setAttribute('src', "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg");
+logo.setAttribute('alt', "ini logo react");
+logo.setAttribute('caption', "logo react");
+logo.setAttribute('class', "logo");
 
-// console.log(document.body.appendChild(rootApp));
-document.body.appendChild(rootApp);
+document.body.appendChild(logo);
 
-ReactDOM.render(e(LikeButton), rootApp)
