@@ -6,7 +6,8 @@ import './ini-resep.js';
 class DaftarResep extends HTMLElement {
     set resepresep(resepresep) {
         this._resepresep = resepresep;
-        this.render();
+        console.log(resepresep);
+        // this.render();
     }
 
     render() {
