@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gangsarswapurba/latihan-react.git"
+    "url": "git+https://github.com/gangsarswapurba/irecipe.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gangsarswapurba/latihan-react/issues"
+    "url": "https://github.com/gangsarswapurba/irecipe/issues"
   },
-  "homepage": "https://github.com/gangsarswapurba/latihan-react#readme",
+  "homepage": "https://github.com/gangsarswapurba/irecipe#readme",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
