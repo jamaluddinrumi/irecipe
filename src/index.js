@@ -1,17 +1,26 @@
 import 'regenerator-runtime';
-// import $ from 'jquery';
+import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css';
 import './js/ini-resep.js';
 import './js/daftar-resep.js';
 import SumberData from './js/sumber-data.js';
+import Masonry from 'masonry-layout';
+var ImagesLoaded = require('imagesloaded');
 
 async function onTombolCariDiKlik() {
-    const hasil = await SumberData.cariResep('beef');
+    const hasil = await SumberData.cariResep('salmon');
 
     const daftarResepElement = document.querySelector('daftar-resep');
     daftarResepElement.resepresep = hasil;
+
+    ImagesLoaded('daftar-resep', function () {
+        // console.log('images loaded');
+        new Masonry(daftarResepElement);
+    });
+    
+
 }
 
 setTimeout(onTombolCariDiKlik, 1500);

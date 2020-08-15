@@ -14,21 +14,22 @@ class IniResep extends HTMLElement {
     }
 
     render() {
-      console.log(this._resep);
-      this.className += 'col '
+      // console.log(this._resep);
+      this.className += 'col col-md-4 mb-4';
+      this.className += ' ';
       this.className += this._resep.strCategory.toLowerCase();
       this.innerHTML = `
-      <div class="card">
+      <div class="card shadow-sm">
         <div class="card-header">
           <h3>${this._resep.strMeal}</h3>
-          <span class="badge badge-pill badge-info">${this._resep.strArea}</span>
+          <span class="badge badge-pill badge-dark shadow-sm">${this._resep.strArea}</span>
         </div>
-        <img class="card-img-top" src="${this._resep.strMealThumb}" 
-          alt="${this._resep.alt}" />
+        <a target="_blank" href="${this._resep.strSource}"><img class="card-img-top" src="${this._resep.strMealThumb}" 
+          alt="${this._resep.alt}" /></a>
           <div class="card-body">
             <h5 class="card-title">Instructions</h5>
             <p class="card-text">${nlbr(this._resep.strInstructions)}</p>
-            <a target="_blank" href="${this._resep.strSource}" class="btn btn-block btn-dark">Source</a>
+            <a target="_blank" href="${this._resep.strSource}" class="btn btn-block btn-dark shadow-sm">Source <i class="fa fa-external-link"></i></a>
           </div>
       </div>
       `
