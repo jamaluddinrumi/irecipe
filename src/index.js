@@ -10,6 +10,7 @@ import Masonry from 'masonry-layout';
 var ImagesLoaded = require('imagesloaded');
 
 async function onTombolCariDiKlik() {
+
     const hasil = await SumberData.cariResep('salmon');
 
     const daftarResepElement = document.querySelector('daftar-resep');
@@ -20,7 +21,6 @@ async function onTombolCariDiKlik() {
         new Masonry(daftarResepElement);
     });
     
-
 }
 
 setTimeout(onTombolCariDiKlik, 1500);

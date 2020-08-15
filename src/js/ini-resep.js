@@ -20,7 +20,7 @@ class IniResep extends HTMLElement {
       this.className += this._resep.strCategory.toLowerCase();
       this.innerHTML = `
       <div class="card shadow-sm">
-        <div class="card-header">
+        <div class="card-header pb-4">
           <h3>${this._resep.strMeal}</h3>
           <span class="badge badge-pill badge-dark shadow-sm">${this._resep.strArea}</span>
         </div>
