@@ -24,4 +24,4 @@ async function onTombolCariDiKlik() {
     document.body.innerText = JSON.stringify(test);
 }
 
-setTimeout(onTombolCariDiKlik, 3000);
+setTimeout(onTombolCariDiKlik, 1500);
