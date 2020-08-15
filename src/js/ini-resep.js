@@ -1,7 +1,7 @@
 /**
- * iniKartu Class
+ * iniResep Class
  */
-class iniKartu extends HTMLElement {
+class IniResep extends HTMLElement {
 
     connectedCallback() {
       this.src = this.getAttribute("src") || null;
@@ -24,5 +24,24 @@ class iniKartu extends HTMLElement {
       `
     }
 
+    set resep(resep) {
+      this._resep = resep;
+      this.render();
+    }
+
+    render() {
+      this.innerHTML = `
+      <div class="card">
+        <img class="card-img-top ${this._resep.class}" src="${this._resep.src}" 
+          alt="${this._resep.alt}" />
+          <div class="card-body">
+            <h5 class="card-title">${this._resep.caption}</h5>
+            <p class="card-text">${this._resep.description}</p>
+            <a target="_blank" href="${this._resep.url}" class="btn btn-block btn-dark">Detail</a>
+          </div>
+      </div>
+      `
+    }
+
 }
-customElements.define('ini-kartu', iniKartu);
+customElements.define('ini-resep', IniResep);

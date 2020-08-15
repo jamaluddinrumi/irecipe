@@ -11,7 +11,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Submission Dicoding Basic Front-End'
+            title: 'iRecipe - Resep Dari Sahabat Untuk Sahabat',
+            template: './src/index.html',
         })
     ],
     module: {

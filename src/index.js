@@ -2,11 +2,12 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css';
-import './js/ini-kartu.js';
+import './js/ini-resep.js';
+import './js/daftar-resep.js';
 import reactlogo from './img/react-icon.svg';
 
 // Instantiate IniGambar class 
-let logo = document.createElement('ini-kartu');
+let logo = document.createElement('ini-resep');
 logo.setAttribute('src', reactlogo);
 logo.setAttribute('alt', "ini logo react");
 logo.setAttribute('caption', "React");
