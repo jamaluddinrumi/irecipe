@@ -1,7 +1,3 @@
-.pace-running > *:not(.pace) {
-  opacity:0;
-}
-
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   background: rgb(255,255,255);
@@ -13,6 +9,16 @@ body {
 nav .slogan {
     font-family: 'IBM Plex Mono', serif;
     font-size: .8rem;
+}
+
+.rounded-pill-left {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.rounded-pill-right {
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
 }
 
 .form-control::placeholder {

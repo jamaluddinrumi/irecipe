@@ -14,6 +14,7 @@ var ImagesLoaded = require('imagesloaded');
 import Masonry from 'masonry-layout';
 import Pace from 'pace-js-amd-fix';
 import 'pace-js-amd-fix/themes/black/pace-theme-loading-bar.css';
+import './css/pace.css';
 
 Pace.start();
 
