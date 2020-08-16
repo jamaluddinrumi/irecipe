@@ -4,9 +4,18 @@ class KolomPencarian extends HTMLElement {
         this.render();
     }
 
+    kosongkan() {
+        this.innerHTML = '';
+    }
+
     set clickEvent(event) {
         this._clickEvent = event;
         this.render();
+    }
+
+    triggerClick(keyword) {
+        this.querySelector('#keyword-resep-yang-dicari').setAttribute('value', keyword);
+        this.querySelector('#cari-resep').click();
     }
 
     get value() {
@@ -32,8 +41,14 @@ class KolomPencarian extends HTMLElement {
         </div>
         `;
 
-        this.querySelector("#keyword-resep-yang-dicari").focus();
+        this.querySelector('#keyword-resep-yang-dicari').focus();
         this.querySelector('#cari-resep').addEventListener('click', this._clickEvent);
+        // this.querySelector('#keyword-resep-yang-dicari').addEventListener('keydown', (event) => {
+        //     if (event.keyCode == 13) {
+        //         console.log(this._clickEvent);
+        //         this._clickEvent;
+        //     }
+        // });
     }
 
 }

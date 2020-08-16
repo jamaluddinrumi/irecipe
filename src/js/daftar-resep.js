@@ -11,7 +11,18 @@ class DaftarResep extends HTMLElement {
             <div class="col-md-5 p-lg-5 mx-auto my-5">
                 <h1 class="display-4 font-weight-normal">Cari Resep</h1>
                 <kolom-pencarian></kolom-pencarian>
-                <div class="recommendations text-left mt-1"><span>Chicken</span><span>Salmon</span><span>Beef</span><span>Avocado</span></div>
+                <div class="recommendations text-left mt-1">
+                    <span class="recommendation">Chicken</span>
+                    <span class="recommendation">Salmon</span>
+                    <span class="recommendation">Soup</span>
+                    <span class="recommendation">Beef</span>
+                    <span class="recommendation">Burger</span>
+                    <span class="recommendation">Steak</span>
+                    <span class="recommendation">Pizza</span>
+                    <span class="recommendation">Pudding</span>
+                    <span class="recommendation">Donut</span>
+                    <span class="recommendation">Avocado</span>
+                </div>
             </div>
         </div>
         `;

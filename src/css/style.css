@@ -28,6 +28,11 @@ nav .slogan {
 
 .banner .recommendations > span {
     margin-right: 1rem;
+    cursor: pointer;
+}
+
+.banner .recommendations > span:hover {
+    text-decoration: underline;
 }
 
 ini-resep a.receipe-link {
