@@ -25,13 +25,14 @@ class KolomPencarian extends HTMLElement {
     render() {
         this.innerHTML = `
         <div class="input-group">
-            <input id="keyword-resep-yang-dicari" type="text" class="form-control" placeholder="${this.placeholder}" aria-label="${this.placeholder}" aria-describedby="basic-addon2">
+            <input autofocus id="keyword-resep-yang-dicari" type="text" class="form-control" placeholder="${this.placeholder}" aria-label="${this.placeholder}" aria-describedby="basic-addon2">
             <div class="input-group-append">
                 <button id="cari-resep" class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
             </div>
         </div>
         `;
 
+        this.querySelector("#keyword-resep-yang-dicari").focus();
         this.querySelector('#cari-resep').addEventListener('click', this._clickEvent);
     }
 

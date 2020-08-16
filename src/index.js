@@ -18,7 +18,7 @@ import 'pace-js-amd-fix/themes/black/pace-theme-loading-bar.css';
 Pace.start();
 
 const kolomPencarianElement = document.querySelector('kolom-pencarian');
-kolomPencarianElement.placeholder = 'e.g. nano-nano';
+kolomPencarianElement.placeholder = '';
 
 const onTombolCariDiKlik = async () => {
 
