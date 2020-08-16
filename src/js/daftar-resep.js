@@ -6,7 +6,7 @@ import './ini-resep.js';
 class DaftarResep extends HTMLElement {
 
     connectedCallback() {
-        this.innerHTML = '';
+        this.className = '';
         this.innerHTML = `
         <div class="p-3 p-md-5 m-md-3 text-center banner">
             <div class="kata-kata col-md-5 p-lg-5 mx-auto my-5">
@@ -38,7 +38,7 @@ class DaftarResep extends HTMLElement {
     render() {
         // console.log(this._resepresep);
         if (this._resepresep !== null) {
-            this.className = 'row clearfix';
+            this.className = 'row';
             this.innerHTML = "";
     
             // var i = 1;
@@ -66,7 +66,7 @@ class DaftarResep extends HTMLElement {
             `;
             this.appendChild(back);
         } else {
-            this.innerHTML = '';
+            this.className = 'row clearfix';
             this.innerHTML = `
             <div class="p-3 p-md-5 m-md-3 text-center oops">
                 <div class="kata-kata col-md-5 p-lg-5 mx-auto my-5">
