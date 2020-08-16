@@ -1,7 +1,7 @@
 {
-  "name": "latihan-react",
+  "name": "irecipe",
   "version": "1.0.0",
-  "description": "",
+  "description": "one stop recipe solution",
   "main": "index.js",
   "mode": "development",
   "scripts": {
@@ -27,7 +27,6 @@
     "html-webpack-plugin": "^4.3.0",
     "imports-loader": "^1.1.0",
     "nl2br": "0.0.3",
-    "pace": "github:HubSpot/pace#v1.0.2",
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
