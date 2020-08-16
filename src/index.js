@@ -3,7 +3,7 @@ import 'regenerator-runtime';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './js/main.js';
-// import './js/ini-header.js';
+import './js/ini-header.js';
 import './js/kolom-pencarian.js';
 import './js/ini-footer.js';
 import './js/ini-resep.js';
