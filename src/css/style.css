@@ -21,6 +21,15 @@ nav .slogan {
     font-style: italic;
 }
 
+.banner {
+    color: azure;
+    background-image: url('../img/banner.jpg');
+}
+
+.banner .recommendations > span {
+    margin-right: 1rem;
+}
+
 ini-resep a.receipe-link {
     color: rgb(33, 37, 41);
     text-decoration: none;

@@ -18,10 +18,12 @@ import 'pace-js-amd-fix/themes/black/pace-theme-loading-bar.css';
 Pace.start();
 
 const kolomPencarianElement = document.querySelector('kolom-pencarian');
+kolomPencarianElement.placeholder = 'e.g. nano-nano';
 
 const onTombolCariDiKlik = async () => {
 
     const hasil = await SumberData.cariResep(kolomPencarianElement.value);
+    kolomPencarianElement.placeholder = kolomPencarianElement.value;
 
     const daftarResepElement = document.querySelector('daftar-resep');
     daftarResepElement.resepresep = hasil;
@@ -32,6 +34,9 @@ const onTombolCariDiKlik = async () => {
     ImagesLoaded('daftar-resep', function () {
         // console.log('images loaded');
         new Masonry(daftarResepElement);
+
+        const navbar = document.querySelector('#navbarCollapse');
+        navbar.appendChild(kolomPencarianElement);
     });
     
 }

@@ -11,7 +11,6 @@ class IniHeader extends HTMLElement {
             <div class="" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                 </ul>
-                <kolom-pencarian></kolom-pencarian>
             </div>
         </nav>
         `;
