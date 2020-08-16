@@ -8,6 +8,10 @@ import './js/daftar-resep.js';
 import SumberData from './js/sumber-data.js';
 import Masonry from 'masonry-layout';
 var ImagesLoaded = require('imagesloaded');
+import Pace from 'pace-js-amd-fix';
+import 'pace-js-amd-fix/themes/black/pace-theme-loading-bar.css';
+
+Pace.start();
 
 async function onTombolCariDiKlik() {
 

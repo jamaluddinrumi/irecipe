@@ -26,6 +26,7 @@
     "css-loader": "^4.2.1",
     "html-webpack-plugin": "^4.3.0",
     "nl2br": "0.0.3",
+    "pace": "github:HubSpot/pace#v1.0.2",
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
@@ -39,6 +40,7 @@
     "imports-loader": "^1.1.0",
     "jquery": "^3.5.1",
     "masonry-layout": "^4.2.2",
+    "pace-js-amd-fix": "^1.0.5",
     "popper.js": "^1.16.1",
     "regenerator-runtime": "^0.13.7"
   }
