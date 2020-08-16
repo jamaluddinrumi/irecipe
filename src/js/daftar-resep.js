@@ -30,30 +30,43 @@ class DaftarResep extends HTMLElement {
 
     set resepresep(resepresep) {
         this._resepresep = resepresep;
-        // console.log(this._resepresep);
         this.render();
     }
 
     render() {
-        this.className = 'row';
-        this.innerHTML = "";
         // console.log(this._resepresep);
+        if (this._resepresep !== null) {
+            this.className = 'row';
+            this.innerHTML = "";
+    
+            // var i = 1;
+    
+            this._resepresep.forEach(resep => {
+                const iniResepElement = document.createElement("ini-resep");
+                iniResepElement.resep = resep;
+                this.appendChild(iniResepElement);
+    
+                // if (i%2 == 0) {
+                //     const pembagiElement = document.createElement("div");
+                //     pembagiElement.className += 'w-100 ';
+                //     this.appendChild(pembagiElement);
+                // }
+    
+                // i++;
+            });
 
-        // var i = 1;
+            const back = document.createElement('div');
+            back.className = 'col';
+            back.innerHTML = `
+             <a class="text-black-50 font-weight-bold" href="${window.location.origin}">
+                <i class="fa fa-angle-double-left"></i> Back
+             </a>
+            `;
+            this.appendChild(back);
+        } else {
 
-        this._resepresep.forEach(resep => {
-            const iniResepElement = document.createElement("ini-resep");
-            iniResepElement.resep = resep;
-            this.appendChild(iniResepElement);
+        }
 
-            // if (i%2 == 0) {
-            //     const pembagiElement = document.createElement("div");
-            //     pembagiElement.className += 'w-100 ';
-            //     this.appendChild(pembagiElement);
-            // }
-
-            // i++;
-        });
     }
     
 }
