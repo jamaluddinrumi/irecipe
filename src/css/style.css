@@ -1,3 +1,7 @@
+.pace-running > *:not(.pace) {
+  opacity:0;
+}
+
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   background: rgb(255,255,255);
