@@ -10,13 +10,13 @@ class KolomPencarian extends HTMLElement {
     }
 
     get value() {
-        return this.querySelector('#cari-resep').value;
+        return this.querySelector('#keyword-resep-yang-dicari').value;
     }
 
     render() {
         this.innerHTML = `
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="e.g. beef, chicken, etc" aria-label="e.g. beef, chicken, etc" aria-describedby="basic-addon2">
+            <input id="keyword-resep-yang-dicari" type="text" class="form-control" placeholder="e.g. beef, chicken, etc" aria-label="e.g. beef, chicken, etc" aria-describedby="basic-addon2">
             <div class="input-group-append">
                 <button id="cari-resep" class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
             </div>

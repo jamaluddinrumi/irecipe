@@ -17,13 +17,16 @@ import 'pace-js-amd-fix/themes/black/pace-theme-loading-bar.css';
 
 Pace.start();
 
-async function onTombolCariDiKlik() {
+const kolomPencarianElement = document.querySelector('kolom-pencarian');
 
-    const hasil = await SumberData.cariResep('salmon');
+const onTombolCariDiKlik = async () => {
+
+    const hasil = await SumberData.cariResep(kolomPencarianElement.value);
 
     const daftarResepElement = document.querySelector('daftar-resep');
     daftarResepElement.resepresep = hasil;
 
+    // console.log(kolomPencarianElement.value);
     // console.log(hasil);
 
     ImagesLoaded('daftar-resep', function () {
@@ -33,4 +36,4 @@ async function onTombolCariDiKlik() {
     
 }
 
-setTimeout(onTombolCariDiKlik, 1500);
+kolomPencarianElement.clickEvent = onTombolCariDiKlik;
