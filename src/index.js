@@ -10,6 +10,7 @@ import Masonry from 'masonry-layout';
 var ImagesLoaded = require('imagesloaded');
 import Pace from 'pace-js-amd-fix';
 import 'pace-js-amd-fix/themes/black/pace-theme-loading-bar.css';
+import './js/kolom-pencarian.js';
 
 Pace.start();
 

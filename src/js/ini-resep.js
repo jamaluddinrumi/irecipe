@@ -13,7 +13,7 @@ class IniResep extends HTMLElement {
 
     render() {
       // console.log(this._resep);
-      this.className += 'col col-md-4 mb-4';
+      this.className += 'col col-md-6 col-lg-4 mb-4';
       this.className += ' ';
       this.className += this._resep.strCategory.toLowerCase();
       this.innerHTML = `
@@ -30,7 +30,7 @@ class IniResep extends HTMLElement {
             <a target="_blank" href="${this._resep.strSource}" class="btn btn-block btn-dark shadow-sm">Source <i class="fa fa-external-link"></i></a>
           </div>
       </div>
-      `
+      `;
     }
 
 }

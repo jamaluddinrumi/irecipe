@@ -3,15 +3,25 @@
 
 <head>
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=IBM+Plex+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand font-weight-bold" href="#">iRecipe</a><span class="collapse navbar-collapse slogan text-white font-italic font-weight-lighter">"Remember Recipes, Remember iRecipe!"</span>
+        <div class="" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <kolom-pencarian></kolom-pencarian>
+        </div>
+    </nav>
+    <main role="main" class="container">
         <daftar-resep class="row"></daftar-resep>
-    </div>
+    </main>
 </body>
 
 </html>
