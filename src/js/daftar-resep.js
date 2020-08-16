@@ -5,7 +5,7 @@ import './ini-resep.js';
  */
 class DaftarResep extends HTMLElement {
     set resepresep(resepresep) {
-        this._resepresep = Object.entries(resepresep)[0][1];
+        this._resepresep = resepresep;
         // console.log(this._resepresep);
         this.render();
     }

@@ -16,6 +16,8 @@ async function onTombolCariDiKlik() {
     const daftarResepElement = document.querySelector('daftar-resep');
     daftarResepElement.resepresep = hasil;
 
+    // console.log(hasil);
+
     ImagesLoaded('daftar-resep', function () {
         // console.log('images loaded');
         new Masonry(daftarResepElement);
