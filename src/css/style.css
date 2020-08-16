@@ -1,7 +1,7 @@
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   background: rgb(255,255,255);
-  background: linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
   padding-top: 8rem;
 }
 
@@ -28,6 +28,7 @@ nav .slogan {
 
 .banner {
     color: azure;
+    background-size: cover;
     background-image: url('../img/banner.jpg');
 }
 
@@ -38,6 +39,17 @@ nav .slogan {
 
 .banner .recommendations > span:hover {
     text-decoration: underline;
+}
+
+.oops {
+    color: azure;
+    background-image: url('../img/oops.jpg');
+    background-size: cover;
+}
+
+.kata-kata {
+    background: black;
+    background: linear-gradient(180deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.3) 100%)
 }
 
 ini-resep a.receipe-link {

@@ -23,12 +23,13 @@ kolomPencarianElement.placeholder = '';
 
 const iniHeader = document.querySelector('ini-header');
 
+const daftarResepElement = document.querySelector('daftar-resep');
+
 const onTombolCariDiKlik = async () => {
 
     const hasil = await SumberData.cariResep(kolomPencarianElement.value);
     kolomPencarianElement.placeholder = kolomPencarianElement.value;
 
-    const daftarResepElement = document.querySelector('daftar-resep');
     daftarResepElement.resepresep = hasil;
 
     ImagesLoaded('daftar-resep', function () {
@@ -41,4 +42,9 @@ const onTombolCariDiKlik = async () => {
 
 kolomPencarianElement.clickEvent = onTombolCariDiKlik;
 
-daftarResepElement.assignRecommendationsListener;
+const recommendationElement = document.querySelectorAll('.recommendation');
+recommendationElement.forEach((recc) => {
+    recc.addEventListener('click', (event) => {
+        kolomPencarianElement.triggerClick(recc.innerHTML);
+    });
+});

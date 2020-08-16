@@ -8,10 +8,10 @@ class DaftarResep extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light banner">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <div class="kata-kata col-md-5 p-lg-5 mx-auto my-5">
                 <h1 class="display-4 font-weight-normal">Cari Resep</h1>
                 <kolom-pencarian></kolom-pencarian>
-                <div class="recommendations text-left mt-1">
+                <div class="recommendations text-left py-2">
                     <span class="recommendation">Chicken</span>
                     <span class="recommendation">Salmon</span>
                     <span class="recommendation">Soup</span>
@@ -26,6 +26,7 @@ class DaftarResep extends HTMLElement {
             </div>
         </div>
         `;
+
     }
 
     set resepresep(resepresep) {
@@ -36,7 +37,7 @@ class DaftarResep extends HTMLElement {
     render() {
         // console.log(this._resepresep);
         if (this._resepresep !== null) {
-            this.className = 'row';
+            this.className = 'row clearfix';
             this.innerHTML = "";
     
             // var i = 1;
@@ -66,12 +67,12 @@ class DaftarResep extends HTMLElement {
         } else {
             this.innerHTML = `
             <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light oops">
-                <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <div class="kata-kata col-md-5 p-lg-5 mx-auto my-5">
                     <h1 class="display-4 font-weight-normal">Oops, <br />tidak ada!</h1>
-                    <div class="recommendations text-center mt-1">
+                    <div class="recommendations text-center py-2">
                         <p>
                             silahkan cari resep yang lain <br /> yang banyak dicari seperti: <br />
-                            Chicken, Salmon, Soup, Beef, Burger, Steak, Pizza, Pudding, Donut atau Avocado 
+                            Chicken, Salmon, Soup, Beef, Burger, Steak, Pizza, Pudding atau Donut atau Avocado 
                         </p>
                     </div>
                 </div>
@@ -80,6 +81,6 @@ class DaftarResep extends HTMLElement {
         }
 
     }
-    
+
 }
 customElements.define("daftar-resep", DaftarResep);
