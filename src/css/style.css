@@ -55,5 +55,6 @@ transition: 1s ease;
 } */
 
 .copyright {
+    margin-top: 1rem;
     opacity: .5;
 }
