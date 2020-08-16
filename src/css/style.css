@@ -17,6 +17,11 @@ nav .slogan {
     font-style: italic;
 }
 
+ini-resep a.receipe-link {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
 ini-resep .card-body {
   background: rgb(255,255,255);
   background: linear-gradient(350deg, rgb(255, 255, 255) 0%, rgb(247, 247, 247) 100%);

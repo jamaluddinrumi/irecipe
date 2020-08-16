@@ -18,8 +18,8 @@ class IniResep extends HTMLElement {
       this.className += this._resep.strCategory.toLowerCase();
       this.innerHTML = `
       <div class="card shadow-sm">
-        <div class="card-header pb-4">
-          <h3>${this._resep.strMeal}</h3>
+        <div class="card-header py-4">
+          <a class="receipe-link" target="_blank" href="${this._resep.strSource}"><h3>${this._resep.strMeal}</h3></a>
           <span class="badge badge-pill badge-dark shadow-sm">${this._resep.strArea}</span>
         </div>
         <a target="_blank" href="${this._resep.strSource}"><img class="card-img-top" src="${this._resep.strMealThumb}" 
