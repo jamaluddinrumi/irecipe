@@ -1,19 +1,19 @@
 import 'regenerator-runtime';
-import $ from 'jquery';
+// import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/style.css';
+import './js/main.js';
+import './js/ini-header.js';
+import './js/kolom-pencarian.js';
+import './js/ini-footer.js';
 import './js/ini-resep.js';
 import './js/daftar-resep.js';
 import SumberData from './js/sumber-data.js';
-import Masonry from 'masonry-layout';
+import './css/style.css';
 var ImagesLoaded = require('imagesloaded');
+import Masonry from 'masonry-layout';
 import Pace from 'pace-js-amd-fix';
 import 'pace-js-amd-fix/themes/black/pace-theme-loading-bar.css';
-import './js/kolom-pencarian.js';
-import './js/ini-footer.js';
-import './js/ini-header.js';
-import './js/main.js';
 
 Pace.start();
 
