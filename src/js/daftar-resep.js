@@ -11,6 +11,7 @@ class DaftarResep extends HTMLElement {
     }
 
     render() {
+        this.className = 'row';
         this.innerHTML = "";
         // console.log(this._resepresep);
 
