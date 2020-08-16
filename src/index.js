@@ -21,6 +21,8 @@ Pace.start();
 const kolomPencarianElement = document.querySelector('kolom-pencarian');
 kolomPencarianElement.placeholder = '';
 
+const iniHeader = document.querySelector('ini-header');
+
 const onTombolCariDiKlik = async () => {
 
     const hasil = await SumberData.cariResep(kolomPencarianElement.value);
@@ -32,18 +34,11 @@ const onTombolCariDiKlik = async () => {
     ImagesLoaded('daftar-resep', function () {
         new Masonry(daftarResepElement);
 
-        const navbar = document.querySelector('#navbarCollapse');
-        navbar.appendChild(kolomPencarianElement);
+        iniHeader.kolomPencarian = kolomPencarianElement;
     });
     
 }
 
 kolomPencarianElement.clickEvent = onTombolCariDiKlik;
 
-const recommendationElement = document.querySelectorAll('.recommendation');
-recommendationElement.forEach((recc) => {
-    recc.addEventListener('click', (event) => {
-        kolomPencarianElement.triggerClick(recc.innerHTML);
-    });
-});
-
+daftarResepElement.assignRecommendationsListener;

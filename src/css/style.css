@@ -2,7 +2,6 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   background: rgb(255,255,255);
   background: linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
-  min-height: 75rem;
   padding-top: 8rem;
 }
 

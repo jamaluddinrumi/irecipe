@@ -15,5 +15,19 @@ class IniHeader extends HTMLElement {
         </nav>
         `;
     };
+
+    set kolomPencarian(kolomPencarianElement) {
+        this._kolomPencarianElement = kolomPencarianElement;
+
+        const navbar = this.querySelector('#navbarCollapse');
+        navbar.appendChild(this._kolomPencarianElement);
+    }
+
+    get kolomPencarian() {
+        const navbar = this.querySelector('#navbarCollapse');
+        navbar.removeChild(this._kolomPencarianElement);
+        
+        return this._kolomPencarianElement;
+    }
 }
 customElements.define('ini-header', IniHeader);

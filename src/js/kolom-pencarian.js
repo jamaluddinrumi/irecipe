@@ -34,9 +34,9 @@ class KolomPencarian extends HTMLElement {
     render() {
         this.innerHTML = `
         <div class="input-group">
-            <input autofocus id="keyword-resep-yang-dicari" type="text" class="form-control" placeholder="${this.placeholder}" aria-label="${this.placeholder}" aria-describedby="basic-addon2">
+            <input autofocus id="keyword-resep-yang-dicari" type="text" class="form-control rounded-pill-left" placeholder="${this.placeholder}" aria-label="${this.placeholder}" aria-describedby="basic-addon2">
             <div class="input-group-append">
-                <button id="cari-resep" class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
+                <button id="cari-resep" class="btn btn-secondary rounded-pill-right" type="button"><i class="fa fa-search"></i></button>
             </div>
         </div>
         `;
