@@ -1,5 +1,3 @@
-import _ from 'lodash';
-import { parseJSON } from 'jquery';
 import nlbr from 'nl2br';
 
 /**
