@@ -5,3 +5,7 @@
 .pace .pace-activity {
   display: none;
 }
+
+.pace .pace-progress {
+  background-color: #343a40;
+}
