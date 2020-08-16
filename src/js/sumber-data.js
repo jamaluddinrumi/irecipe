@@ -5,7 +5,7 @@ class SumberData {
                     return response.json();
                 })
                 .then(responseJson => {
-                    return responseJson;
+                    return Promise.resolve(responseJson.meals);
                 })
                 .catch(error => {
                     console.log(error);
