@@ -6,8 +6,9 @@ import './ini-resep.js';
 class DaftarResep extends HTMLElement {
 
     connectedCallback() {
+        this.innerHTML = '';
         this.innerHTML = `
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light banner">
+        <div class="p-3 p-md-5 m-md-3 text-center banner">
             <div class="kata-kata col-md-5 p-lg-5 mx-auto my-5">
                 <h1 class="display-4 font-weight-normal">Cari Resep</h1>
                 <kolom-pencarian></kolom-pencarian>
@@ -65,8 +66,9 @@ class DaftarResep extends HTMLElement {
             `;
             this.appendChild(back);
         } else {
+            this.innerHTML = '';
             this.innerHTML = `
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light oops">
+            <div class="p-3 p-md-5 m-md-3 text-center oops">
                 <div class="kata-kata col-md-5 p-lg-5 mx-auto my-5">
                     <h1 class="display-4 font-weight-normal">Oops, <br />tidak ada!</h1>
                     <div class="recommendations text-center py-2">
