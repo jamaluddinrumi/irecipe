@@ -27,7 +27,7 @@ class IniResep extends HTMLElement {
           <div class="card-body">
             <h5 class="card-title">Instructions</h5>
             <p class="card-text">${nlbr(this._resep.strInstructions)}</p>
-            <a target="_blank" href="${this._resep.strSource}" class="btn btn-block btn-dark shadow-sm">Source <i class="fa fa-external-link"></i></a>
+            <a target="_blank" href="${this._resep.strSource}" class="btn btn-block btn-secondary shadow-sm">Source <i class="fa fa-external-link"></i></a>
           </div>
       </div>
       `;
