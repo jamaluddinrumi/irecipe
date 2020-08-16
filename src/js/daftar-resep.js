@@ -60,7 +60,7 @@ class DaftarResep extends HTMLElement {
             const back = document.createElement('div');
             back.className = 'col';
             back.innerHTML = `
-             <a class="text-black-50 font-weight-bold" href="${window.location.origin}">
+             <a class="text-black-50 font-weight-bold" href="${window.location.href}">
                 <i class="fa fa-angle-double-left"></i> Back
              </a>
             `;
