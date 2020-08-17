@@ -1,0 +1,13 @@
+- name: FTP Deploy
+  uses: SamKirkland/FTP-Deploy-Action@3.1.1
+  with:
+    # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
+    ftp-server: 153.92.8.153
+    # FTP account username
+    ftp-username: jamal@irecipe2.innaweb.com
+    # FTP account password
+    ftp-password: gang33sar42
+    # The local folder to copy, defaults to root project folder
+    local-dir: # optional, default is ./
+    # Passes through options into git-ftp
+    git-ftp-args: # optional
