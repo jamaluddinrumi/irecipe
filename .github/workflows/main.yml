@@ -12,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         ftp-server: 153.92.8.153
-        ftp-username: jamal@irecipe2.innaweb.com
+        ftp-username: jamal@irecipe.innaweb.com
         ftp-password: ${{ secrets.FTP_PASSWORD }}
