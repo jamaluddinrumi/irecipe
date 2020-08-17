@@ -43,12 +43,6 @@ class KolomPencarian extends HTMLElement {
 
         this.querySelector('#keyword-resep-yang-dicari').focus();
         this.querySelector('#cari-resep').addEventListener('click', this._clickEvent);
-        // this.querySelector('#keyword-resep-yang-dicari').addEventListener('keydown', (event) => {
-        //     if (event.keyCode == 13) {
-        //         console.log(this._clickEvent);
-        //         this._clickEvent;
-        //     }
-        // });
     }
 
 }

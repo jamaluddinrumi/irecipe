@@ -7,12 +7,10 @@ class IniResep extends HTMLElement {
 
     set resep(resep) {
       this._resep = resep;
-      // console.log(this._resep);
       this.render(this._resep);
     }
 
     render() {
-      // console.log(this._resep);
       this.className += 'col col-md-6 col-lg-4 mb-4';
       this.className += ' ';
       this.className += this._resep.strCategory.toLowerCase();
