@@ -10,27 +10,26 @@ on:
     branches: [ master ]
 
 jobs:
-  Build:
+  Build then Publish:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '12.x'
     - run: npm install
     - run: npm run build --if-present
       
     - name: List output files
       run: ls
-  FTP-Deploy-Action:
-    needs: build
-    name: FTP Deploy Action
-    runs-on: ubuntu-latest
-    steps:
+    
+    - name: Checkout
     - uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
+
     - name: FTP Deploy Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
