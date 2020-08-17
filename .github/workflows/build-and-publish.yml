@@ -20,18 +20,16 @@ jobs:
         node-version: '10.x'
     - run: npm install
     - run: npm run build --if-present
-  FTP-Deploy-Action:
-    needs: build
-    name: FTP Deploy Action
+  Deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.1.0
+    - uses: actions/checkout@v2
+    - name: Upload via FTP
+      uses: sebastianpopp/ftp-action@releases/v2
       with:
-        fetch-depth: 2
-    - name: FTP Deploy Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
-      with:
-        ftp-server: 153.92.8.153
-        ftp-username: jamal@irecipe.innaweb.com
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: dist/
+        host: ${{ secrets.FTP_SERVER }}
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localDir: "dist"
+        remoteDir: ""
