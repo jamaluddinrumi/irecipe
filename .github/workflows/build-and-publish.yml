@@ -2,17 +2,17 @@ on: push
 name: Build and Publish 
 jobs:
   FTP-Deploy-Action:
-    name: FTP Deploy Action
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
 
-    - name: Use Node.js 10.x
+    - name: Use Node.js 12.x
       uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '12.x'
         
     - name: Build Project
       run: |
@@ -22,10 +22,10 @@ jobs:
     - name: List output files
       run: ls
       
-    - name: FTP Deploy Action
+    - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         ftp-server: 153.92.8.153
         ftp-username: jamal@irecipe.innaweb.com
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: dist # This folder is NOT going to upload by default unless you add it to .git-ftp-include
+        local-dir: dist
