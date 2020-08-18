@@ -22,8 +22,11 @@ jobs:
     - run: git checkout package-lock.json
     - run: npm run build --if-present
       
-    - name: List output files
-      run: find . -maxdepth 2 -type d -exec ls -ld "{}" \;
+    - name: List src/
+      run: ls -a src/
+    
+    - name: List dist/
+      run: ls -a dist/
 
     - name: FTP Deploy Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
