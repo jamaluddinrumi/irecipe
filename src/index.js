@@ -41,6 +41,7 @@ const onTombolCariDiKlik = async () => {
 }
 
 kolomPencarianElement.clickEvent = onTombolCariDiKlik;
+kolomPencarianElement.focus();
 
 const recommendationElement = document.querySelectorAll('.recommendation');
 recommendationElement.forEach((recc) => {

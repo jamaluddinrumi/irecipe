@@ -31,6 +31,14 @@ class KolomPencarian extends HTMLElement {
         return this._placeholder;
     }
 
+    focus() {
+        this.querySelector('#keyword-resep-yang-dicari').focus();
+    }
+
+    unfocus() {
+        this.querySelector('#keyword-resep-yang-dicari').blur();
+    }
+
     render() {
         this.innerHTML = `
         <div class="input-group">
@@ -46,7 +54,6 @@ class KolomPencarian extends HTMLElement {
         </div>
         `;
 
-        this.querySelector('#keyword-resep-yang-dicari').focus();
         this.querySelector('#cari-resep').addEventListener('click', this._clickEvent);
     }
 
