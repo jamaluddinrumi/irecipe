@@ -1,9 +1,0 @@
-RewriteEngine on
-RewriteBase /
-RewriteCond %{REQUEST_URI} !^/dist/
-RewriteCond %{HTTP_HOST} ^(www\.)?irecipe.innaweb\.
-RewriteRule ^(.*)$ /dist/$1 [L]
-
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
