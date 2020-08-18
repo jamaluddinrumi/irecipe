@@ -4,10 +4,6 @@ class KolomPencarian extends HTMLElement {
         this.render();
     }
 
-    kosongkan() {
-        this.innerHTML = '';
-    }
-
     set clickEvent(event) {
         this._clickEvent = event;
         this.render();
@@ -42,7 +38,7 @@ class KolomPencarian extends HTMLElement {
     render() {
         this.innerHTML = `
         <div class="input-group">
-            <input autofocus id="keyword-resep-yang-dicari" type="text" class="form-control rounded-pill-left" placeholder="${this.placeholder}" aria-label="${this.placeholder}" aria-describedby="basic-addon2">
+            <input id="keyword-resep-yang-dicari" type="text" class="form-control rounded-pill-left" placeholder="${this.placeholder}" aria-label="${this.placeholder}" aria-describedby="basic-addon2">
             <div class="input-group-append">
                 <button id="cari-resep" class="btn btn-secondary rounded-pill-right" type="button">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
