@@ -28,13 +28,13 @@ const daftarResepElement = document.querySelector('daftar-resep');
 const onTombolCariDiKlik = async () => {
 
     const hasil = await SumberData.cariResep(kolomPencarianElement.value);
-    kolomPencarianElement.placeholder = kolomPencarianElement.value;
 
     daftarResepElement.resepresep = hasil;
 
     ImagesLoaded('daftar-resep', function () {
         new Masonry(daftarResepElement);
 
+        kolomPencarianElement.placeholder = kolomPencarianElement.value;
         iniHeader.kolomPencarian = kolomPencarianElement;
     });
     
