@@ -2,7 +2,6 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
-  padding-top: 8rem;
 }
 
 nav .slogan {
@@ -24,6 +23,10 @@ nav .slogan {
     color: #6c757d;
     opacity: 1;
     font-style: italic;
+}
+
+main {
+    margin-top: 5rem !important;
 }
 
 .banner {
