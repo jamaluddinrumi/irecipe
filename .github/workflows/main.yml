@@ -23,7 +23,7 @@ jobs:
     - run: npm run build --if-present
       
     - name: List output files
-      run: ls
+      run: find . -maxdepth 2 -type d -exec ls -ld "{}" \;
 
     - name: FTP Deploy Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
