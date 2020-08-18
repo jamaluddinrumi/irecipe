@@ -67,8 +67,8 @@ class DaftarResep extends HTMLElement {
                     <h1 class="display-4 font-weight-normal">Oops, <br />not found!</h1>
                     <div class="recommendations text-center py-2">
                         <p>
-                            silahkan cari resep yang lain <br /> yang banyak dicari seperti: <br />
-                            Chicken, Salmon, Soup, Beef, Burger, Steak, Pizza, Pudding, Chocolate atau lainnya 
+                            please use another popular keyword like:<br />
+                            Chicken, Salmon, Soup, Beef, Burger, Steak, Pizza, Pudding, Chocolate, etc 
                         </p>
                     </div>
                 </div>
