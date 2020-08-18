@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import nlbr from 'nl2br';
 
 /**
