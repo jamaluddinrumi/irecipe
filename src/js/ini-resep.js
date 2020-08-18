@@ -39,13 +39,13 @@ class IniResep extends HTMLElement {
           alt="${this._resep.alt}" />
         </a>
         <div class="card-body">
-          <h5 class="card-title text-center">Ingredients</h5>
+          <h5 class="card-title text-center mt-3 mb-1">Ingredients</h5>
           <ul class="list-group mt-2 mb-3">
             ${ingredients.map( ingredient => `
               <li class="list-group-item">${ingredient}</li>
             `).join('')}
           </ul>
-          <h5 class="card-title text-center">Instructions</h5>
+          <h5 class="card-title text-center mt-4 mb-1">Instructions</h5>
           <p class="card-text">${nlbr(this._resep.strInstructions)}</p>
           <a target="_blank" href="${this._resep.strSource}" class="btn btn-block btn-dark shadow-sm">Source 
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
