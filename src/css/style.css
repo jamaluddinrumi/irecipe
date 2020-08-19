@@ -9,6 +9,14 @@ nav .slogan {
     font-size: .8rem;
 }
 
+nav.navbar > div.container-fluid {
+    flex-wrap: nowrap;
+}
+
+.navbar-brand, #navbar-search {
+    display: flex;
+}
+
 .rounded-pill-left {
   border-top-left-radius: 50rem !important;
   border-bottom-left-radius: 50rem !important;
@@ -48,6 +56,7 @@ main {
     color: azure;
     background-image: url('../img/oops.jpg');
     background-size: cover;
+    max-height: vw;
     position: relative !important;
     padding: 0 !important;
     margin-left: 1rem !important;
