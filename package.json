@@ -6,7 +6,7 @@
   "mode": "development",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --config webpack.dev.js"
+    "start": "webpack-dev-server --host 0.0.0.0 --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,15 @@
   "bugs": {
     "url": "https://github.com/gangsarswapurba/irecipe/issues"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "homepage": "https://github.com/gangsarswapurba/irecipe#readme",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "babel-loader": "^8.1.0",
+    "browserslist": "^4.14.0",
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^4.2.1",
     "html-webpack-plugin": "^4.3.0",
@@ -36,7 +40,7 @@
     "webpack-merge": "^5.1.1"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-alpha1",
+    "bootstrap": "^4.5.2",
     "imagesloaded": "^4.1.4",
     "jquery": "^3.5.1",
     "masonry-layout": "^4.2.2",
