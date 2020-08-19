@@ -60,14 +60,14 @@ main {
     color: azure;
     background-image: url('../img/oops.jpg');
     background-size: cover;
-    max-height: vw;
+    max-height: 100vw;
     position: relative !important;
     padding: 0 !important;
     margin-left: 1rem !important;
     margin-right: 1rem !important;
 }
 
-.banner, .oops {
+.sleek-border-radius {
     border-radius: calc(.25rem - 1px);
 }
 
@@ -110,6 +110,5 @@ transition: 1s ease;
 } */
 
 .copyright {
-    margin-top: 1rem;
     opacity: .5;
 }

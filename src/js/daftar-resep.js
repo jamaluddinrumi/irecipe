@@ -9,8 +9,8 @@ class DaftarResep extends HTMLElement {
     connectedCallback() {
         this.className = 'row';
         this.innerHTML = `
-        <div class="col p-3 m-3 text-center banner shadow-sm">
-            <div class="kata-kata col-md-5 p-lg-5 mx-auto my-5">
+        <div class="col p-3 m-3 text-center banner shadow-sm sleek-border-radius">
+            <div class="kata-kata col-md-5 p-lg-5 mx-auto my-5 sleek-border-radius">
                 <h1 class="display-4 font-weight-normal">Looking for Recipe</h1>
                 <kolom-pencarian></kolom-pencarian>
                 <div class="recommendations text-left py-2">
@@ -80,7 +80,7 @@ class DaftarResep extends HTMLElement {
         } else {
             this.className = 'row';
             this.innerHTML = `
-            <div class="col text-center oops shadow-sm">
+            <div class="col text-center oops shadow-sm sleek-border-radius">
                 <div class="kata-kata col-md-5 p-lg-5 mx-auto my-5">
                     <h1 class="display-4 font-weight-normal">Oops, <br />not found!</h1>
                     <div class="recommendations text-center py-2">
