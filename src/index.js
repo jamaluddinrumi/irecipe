@@ -1,7 +1,5 @@
 import 'regenerator-runtime';
-// import $ from 'jquery';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './js/html.js';
 import './js/main.js';
 import './js/ini-header.js';
 import './js/kolom-pencarian.js';
@@ -9,6 +7,8 @@ import './js/ini-footer.js';
 import './js/ini-resep.js';
 import './js/daftar-resep.js';
 import SumberData from './js/sumber-data.js';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css';
 var ImagesLoaded = require('imagesloaded');
 import Masonry from 'masonry-layout';
