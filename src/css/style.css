@@ -33,6 +33,10 @@ nav.navbar > div.container-fluid {
     font-style: italic;
 }
 
+.alert a {
+    word-break: break-all;
+}
+
 main {
     margin-top: 5rem !important;
 }
