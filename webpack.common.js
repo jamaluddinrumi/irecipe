@@ -13,7 +13,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'iRecipe - Resep Dari Sahabat Untuk Sahabat',
+            title: 'iRecipe - Remember Recipes, Remember iRecipe!',
             template: './src/index.html',
             meta: { 
                 viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
