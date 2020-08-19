@@ -74,7 +74,7 @@ class DaftarResep extends HTMLElement {
         } else {
             this.className = 'row';
             this.innerHTML = `
-            <div class="col p-3 p-md-5 text-center oops">
+            <div class="col text-center oops">
                 <div class="kata-kata col-md-5 p-lg-5 mx-auto my-5">
                     <h1 class="display-4 font-weight-normal">Oops, <br />not found!</h1>
                     <div class="recommendations text-center py-2">

@@ -48,6 +48,10 @@ main {
     color: azure;
     background-image: url('../img/oops.jpg');
     background-size: cover;
+    position: relative !important;
+    padding: 0 !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
 }
 
 .kata-kata {
