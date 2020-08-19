@@ -67,6 +67,10 @@ main {
     margin-right: 1rem !important;
 }
 
+.banner, .oops {
+    border-radius: calc(.25rem - 1px);
+}
+
 .kata-kata {
     background: black;
     background: linear-gradient(180deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.3) 100%)
