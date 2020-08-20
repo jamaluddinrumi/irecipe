@@ -19,7 +19,7 @@ class IniResep extends HTMLElement {
         const ingredient = this._resep[ingredientKey];
         const measure = this._resep[measureKey];
         if (ingredient !== null && ingredient !== '') {
-          const value = ingredient + ' ' + measure;
+          const value = measure.toLowerCase() + ' ' + ingredient.toLowerCase();
           ingredients.push(value);
         }
       }
