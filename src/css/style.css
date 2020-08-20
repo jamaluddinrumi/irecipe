@@ -17,6 +17,10 @@ nav.navbar > div.container-fluid {
     display: flex;
 }
 
+p {
+    line-height: 2rem;
+}
+
 .rounded-pill-left {
   border-top-left-radius: 50rem !important;
   border-bottom-left-radius: 50rem !important;
