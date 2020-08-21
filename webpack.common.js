@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     output: {
@@ -19,6 +20,11 @@ module.exports = {
                 viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
                 charset: 'UTF-8'
             }
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'src/img/favicon', to: 'img/favicon'}
+            ]
         })
     ],
     module: {
