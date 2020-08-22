@@ -40,9 +40,8 @@
     "webpack-merge": "^5.1.1"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^5.0.0-alpha1",
     "imagesloaded": "^4.1.4",
-    "jquery": "^3.5.1",
     "masonry-layout": "^4.2.2",
     "pace-js-amd-fix": "^1.0.5",
     "popper.js": "^1.16.1",
