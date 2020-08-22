@@ -5,6 +5,11 @@ const title = document.querySelector('title');
 title.insertAdjacentHTML('afterend', `
 <meta http-equiv="x-ua-compatible" content="ie=edge"/>
 
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=IBM+Plex+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
 <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
