@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css';
 var ImagesLoaded = require('imagesloaded');
 import Masonry from 'masonry-layout';
+import ReadMore from 'readmore-js';
 
 const kolomPencarianElement = document.querySelector('kolom-pencarian');
 kolomPencarianElement.placeholder = '';
@@ -30,7 +31,20 @@ const onTombolCariDiKlik = async () => {
     daftarResepElement.resepresep = hasil;
     
     ImagesLoaded('daftar-resep', function () {
-        new Masonry(daftarResepElement);
+        const MasonryJs = new Masonry(daftarResepElement);
+
+        MasonryJs.on('layoutComplete', function () {
+            new ReadMore('.card-body', {
+              blockProcessed: function() {
+                  MasonryJs.layout();
+              },
+              afterToggle: function() {
+                  MasonryJs.layout();
+              }
+            });
+        });
+
+        MasonryJs.layout();
         
     });
     
