@@ -6,7 +6,7 @@
   "mode": "development",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --host 0.0.0.0 --config webpack.dev.js"
+    "start": "webpack-dev-server --host 0.0.0.0 --config webpack.dev.js --open"
   },
   "repository": {
     "type": "git",
