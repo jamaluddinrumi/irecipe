@@ -13,13 +13,13 @@ class IniResepThumb extends HTMLElement {
     }
 
     render() {
-      this.className += 'col col-md-6 col-lg-4 mb-4';
+      this.className += 'col-6 col-md-6 col-lg-4 mb-4';
       this.className += ' ';
       this.className += this._resep.strCategory.toLowerCase();
       this.id = this._resep.idMeal;
       this.innerHTML = `
           <div class='card shadow-sm'>
-            <div class='card-header py-4'>
+            <div class='card-header pt-3'>
               <h3 class='text-center'>${this._resep.strMeal}</h3>
             </div>
             <img class='card-img-top' src='${this._resep.strMealThumb}' alt='${this._resep.strMeal}' />
