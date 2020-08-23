@@ -4,7 +4,7 @@ import './components/main.js';
 import './components/ini-header.js';
 import './components/kolom-pencarian.js';
 import './components/ini-footer.js';
-import './components/ini-resep.js';
+import './components/ini-resepthumb.js';
 import './components/daftar-resep.js';
 import SumberData from './components/sumber-data.js';
 import 'bootstrap';
@@ -27,11 +27,10 @@ const onTombolCariDiKlik = async () => {
     kolomPencarianElement.placeholder = kolomPencarianElement.value;
     iniHeader.kolomPencarian = kolomPencarianElement;
     
-    daftarResepElement.resepresep = hasil;
+    daftarResepElement.daftarResep = hasil;
     
     ImagesLoaded('daftar-resep', function () {
         new Masonry(daftarResepElement);
-        
     });
     
 }
