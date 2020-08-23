@@ -1,7 +1,9 @@
 import nlbr from 'nl2br';
+import Masonry from 'masonry-layout';
+import SumberData from './sumber-data.js';
 
 /**
- * iniResep Class
+ * IniResepThumb Class
  */
 class IniResepThumb extends HTMLElement {
 
@@ -11,33 +13,31 @@ class IniResepThumb extends HTMLElement {
     }
 
     render() {
-
-      const ingredients = [];
-      for (let index = 1; index <= 20; index++) {
-        const ingredientKey = 'strIngredient' + index;
-        const measureKey = 'strMeasure' + index;
-        const ingredient = this._resep[ingredientKey];
-        const measure = this._resep[measureKey];
-        if (ingredient !== null && ingredient !== '') {
-          const value = measure.toLowerCase() + ' ' + ingredient.toLowerCase();
-          ingredients.push(value);
-        }
-      }
-
       this.className += 'col col-md-6 col-lg-4 mb-4';
       this.className += ' ';
       this.className += this._resep.strCategory.toLowerCase();
+      this.id = this._resep.idMeal;
       this.innerHTML = `
-        <a class='receipe-link' target='_blank' href='${this._resep.strSource}'>
           <div class='card shadow-sm'>
             <div class='card-header py-4'>
               <h3 class='text-center'>${this._resep.strMeal}</h3>
             </div>
-            <img class='card-img-top' src='${this._resep.strMealThumb}' alt='${this._resep.alt}' />
+            <img class='card-img-top' src='${this._resep.strMealThumb}' alt='${this._resep.strMeal}' />
           </div>
-        </a>
       `;
+
+      this.addEventListener('click', this.onKlik);
     }
+
+    async onKlik () {
+        const hasil = await SumberData.cariResepBerdasarkanId(this.id);
+
+        const daftarResepElement = document.querySelector("daftar-resep");
+        daftarResepElement.tampilanDetailResep = true;
+        daftarResepElement.daftarResep = hasil;
+    }
+
+    
 
 }
 customElements.define('ini-resepthumb', IniResepThumb);

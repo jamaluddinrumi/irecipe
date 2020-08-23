@@ -5,6 +5,7 @@ class IniHeader extends HTMLElement {
     }
 
     render() {
+        this.className = 'header';
         this.innerHTML = `
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow">
             <div class="container-fluid">

@@ -2,14 +2,14 @@ import 'regenerator-runtime';
 import './components/html.js';
 import './components/main.js';
 import './components/ini-header.js';
+import './components/footer.js';
 import './components/kolom-pencarian.js';
-import './components/ini-footer.js';
 import './components/ini-resepthumb.js';
 import './components/daftar-resep.js';
 import SumberData from './components/sumber-data.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/style.css';
+import './css/style.scss';
 var ImagesLoaded = require('imagesloaded');
 import Masonry from 'masonry-layout';
 
@@ -27,11 +27,9 @@ const onTombolCariDiKlik = async () => {
     kolomPencarianElement.placeholder = kolomPencarianElement.value;
     iniHeader.kolomPencarian = kolomPencarianElement;
     
+    daftarResepElement.tampilanDetailResep = false;
     daftarResepElement.daftarResep = hasil;
     
-    ImagesLoaded('daftar-resep', function () {
-        new Masonry(daftarResepElement);
-    });
     
 }
 
