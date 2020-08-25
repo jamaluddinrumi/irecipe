@@ -1,6 +1,6 @@
 import nlbr from 'nl2br';
 import Masonry from 'masonry-layout';
-import SumberData from './sumber-data.js';
+const axios = require('axios');
 
 /**
  * IniResepThumb Class
@@ -30,11 +30,11 @@ class IniResepThumb extends HTMLElement {
     }
 
     async onKlik () {
-        const hasil = await SumberData.cariResepBerdasarkanId(this.id);
+        const hasil = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=`+this.id);
 
         const daftarResepElement = document.querySelector("daftar-resep");
         daftarResepElement.tampilanDetailResep = true;
-        daftarResepElement.daftarResep = hasil;
+        daftarResepElement.daftarResep = hasil.data.meals;
     }
 
     
