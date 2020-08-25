@@ -1,7 +1,14 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+}
+
+.input-group>.form-control:focus {
+    border-color: none;
+    box-shadow: none;
 }
 
 nav .slogan {
@@ -79,6 +86,11 @@ main {
 .kata-kata {
     background: black;
     background: linear-gradient(180deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.3) 100%)
+}
+
+.btn.source {
+    background-color: #e2e6ea;
+    font-weight: 700;
 }
 
 ini-resepthumb, ini-resepdetail {

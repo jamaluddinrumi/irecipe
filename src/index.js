@@ -8,10 +8,11 @@ import './components/ini-resepthumb.js';
 import './components/daftar-resep.js';
 import SumberData from './components/sumber-data.js';
 import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 var ImagesLoaded = require('imagesloaded');
 import Masonry from 'masonry-layout';
+import * as mdb from 'mdb-ui-kit';
 
 const kolomPencarianElement = document.querySelector('kolom-pencarian');
 kolomPencarianElement.placeholder = '';
