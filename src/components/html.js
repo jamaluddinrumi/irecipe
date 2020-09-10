@@ -7,7 +7,7 @@ title.insertAdjacentHTML('afterend', `
 
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
 <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=IBM+Plex+Sans:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=IBM+Plex+Sans:wght@300;400;700&display=swap"
     rel="stylesheet">
 
 <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
