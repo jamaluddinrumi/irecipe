@@ -133,11 +133,13 @@ transition: 1s ease;
 
 footer {
     margin-top: 2rem;
+    padding: 1rem 0;
     background-color: black;
     p {
         color: white;
         font-weight: 300;
         font-size: .8rem;
+        margin-bottom: 0;
     }
     .copyright > span {
         color: rgba(255, 255, 255, 0.6);
