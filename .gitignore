@@ -1,5 +1,4 @@
 /node_modules/
 .DS_Store
-/dist/
 *.code-workspace
 package-lock.json
