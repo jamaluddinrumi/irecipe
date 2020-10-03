@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gangsarswapurba/irecipe.git"
+    "url": "git+https://github.com/jamaluddinrumi/irecipe.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gangsarswapurba/irecipe/issues"
+    "url": "https://github.com/jamaluddinrumi/irecipe/issues"
   },
   "browserslist": [
     "defaults"
   ],
-  "homepage": "https://github.com/gangsarswapurba/irecipe#readme",
+  "homepage": "https://github.com/jamaluddinrumi/irecipe#readme",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
