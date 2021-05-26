@@ -27,7 +27,7 @@
     "@babel/preset-env": "^7.12.11",
     "axios": "^0.21.1",
     "babel-loader": "^8.2.2",
-    "browserslist": "^4.16.1",
+    "browserslist": "^4.16.5",
     "copy-webpack-plugin": "^6.4.1",
     "css-loader": "^4.3.0",
     "file-loader": "^6.2.0",
