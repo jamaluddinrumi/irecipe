@@ -35,7 +35,7 @@
     "html-webpack-plugin": "^4.5.1",
     "imports-loader": "^1.2.0",
     "nl2br": "0.0.3",
-    "node-forge": "^0.10.0",
+    "node-forge": "^1.0.0",
     "postcss": "7.0.36",
     "sass": "^1.32.2",
     "sass-loader": "^9.0.3",
